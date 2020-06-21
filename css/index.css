@@ -142,10 +142,20 @@ body {
 
 .what-we-do {
   border: 2px solid green;
+  background-color: var(--light-gray);
 }
 
 .what-we-do__img {
+  border: 2px solid rebeccapurple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+}
+
+.what-we-do__img  img{
   border: 2px solid greenyellow;
+  width: 100%;
 }
 
 .what-we-do__texts {
