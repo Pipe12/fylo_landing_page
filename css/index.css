@@ -1,4 +1,14 @@
-body {}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+.navbar, h1, button {
+  font-family: 'Raleway';
+}
 
 .pouch {
   border: 2px solid blue;
@@ -9,11 +19,38 @@ body {}
 
 .hero, .what-we-do, .apply-now {
   display: grid;
-  grid-template-columns: 1fr 1fr; 
 }
 
 .navbar {
   border: 2px solid orange;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.9em;
+}
+
+.navbar__brand img {
+  width: 6.25em;
+  margin: 1.5em;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  margin: 0em;
+  padding: 0em;
+}
+
+.nav__item {
+  margin-right: 1.5em;
+}
+
+.nav__link {
+  text-decoration: none;
 }
 
 .hero {
@@ -56,9 +93,28 @@ body {}
   border: 2px solid darkorange;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 376px) {
   .hero, .what-we-do, .apply-now {
-    grid-template-columns: 1fr; }
+    grid-template-columns: 1fr 1fr; 
+  }
+
+  .hero__img {
+    grid-column: 2 / 3;
+    grid-row: 1 /2;
+  }
+  
+  .hero__texts {
+    grid-column: 1 / 2;
+  }
+  
+  .what-we-do__img {
+    grid-column: 2 / 3;
+    grid-row: 1 /2;
+  }
+  
+  .what-we-do__texts {
+    grid-column: 1 / 2;
+  }
 }
 
 .attribution { font-size: 11px; text-align: center; }
