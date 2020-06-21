@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
 
+:root {
+  --dark-blue: hsl(243, 87%, 12%);
+  --light_blue: hsl(238, 22%, 44%);
+
+  --bright-blue: hsl(224, 93%, 58%);
+  --cyan: hsl(170, 45%, 43%);
+
+  --light-gray: hsl(240, 75%, 98%);
+  --gray: hsl(0, 0%, 75%);
+}
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -49,8 +59,13 @@ body {
   margin-right: 1.5em;
 }
 
-.nav__link {
+.nav__link, .nav__link:visited {
   text-decoration: none;
+  color: var(--dark-blue);
+}
+
+.nav__link:hover {
+  color: var(--light_blue);
 }
 
 .hero {
