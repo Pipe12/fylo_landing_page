@@ -17,6 +17,11 @@ body {
   color: var(--dark-blue);
 }
 
+section {
+  padding-top: 3em;
+  padding-bottom: 5em;
+}
+
 .navbar, h1, button {
   font-family: 'Raleway';
 }
@@ -207,6 +212,57 @@ body {
   width: 1.5em;
   padding-left: 0.5em;
   border-bottom: 1px solid var(--cyan);
+}
+
+.testimonial {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px 0px var(--gray);
+}
+
+.testimonial__quote {
+  position: relative;
+}
+
+.testimonial__quote-mark  {
+  position: absolute;
+  left: 5%;
+  top: 1em;
+}
+
+.testimonial__quote > p {
+  padding-top: 3em;
+  font-size: 0.8em;
+}
+
+.testimonial__autor {
+  display: flex;
+  margin-left: 5%;
+  align-items: center;
+  padding-bottom: 1em;
+}
+
+.testimonial__avatar {
+  width: 2em;
+  border-radius: 50%;
+}
+
+.testimonial__autor-info {
+  margin-left: 0.6em;
+}
+
+.testimonial__autor-name {
+  font-size: 0.6em;
+  font-family: 'Raleway';
+  font-weight: 700;
+  margin-bottom: 0.3em;
+}
+
+.testimnial__autor-title {
+  font-size: 0.5em; 
 }
 
 .apply-now {
