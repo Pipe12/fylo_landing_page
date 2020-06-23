@@ -17,6 +17,11 @@ body {
   color: var(--dark-blue);
 }
 
+section {
+  padding-top: 3em;
+  padding-bottom: 5em;
+}
+
 .navbar, h1, button {
   font-family: 'Raleway';
 }
@@ -142,14 +147,122 @@ body {
 
 .what-we-do {
   border: 2px solid green;
+  background-color: var(--light-gray);
+  position: relative;
 }
 
+/* .what-we-do::before {
+  border: 2px dotted red;
+  background-image: url(../images/bg-curve-desktop.svg);
+  background-size: 100% 100%;
+  display: inline-block;
+  width: 100%; 
+  height: 8vw;
+  content:"";
+} */
+
 .what-we-do__img {
+  border: 2px solid rebeccapurple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+}
+
+.what-we-do__img  img{
   border: 2px solid greenyellow;
+  width: 100%;
 }
 
 .what-we-do__texts {
   border: 2px solid deeppink ;
+}
+
+.what-we-do__texts h1 {
+  font-size: 1.0em;
+  text-align: center;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.what-we-do__texts p {
+  font-size: 0.8em;
+  padding-left: 5%;
+  padding-right: 5%;
+  line-height: 1.5em;
+}
+
+.link {
+  font-size: 0.8em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link a {
+  text-decoration: none;
+  color: var(--cyan);
+  line-height: 1.5em;
+  border-bottom: 1px solid var(--cyan);
+}
+
+.link img {
+  width: 1.5em;
+  padding-left: 0.5em;
+  border-bottom: 1px solid var(--cyan);
+}
+
+.testimonial {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px 0px var(--gray);
+}
+
+.testimonial__quote {
+  position: relative;
+}
+
+.testimonial__quote-mark  {
+  position: absolute;
+  left: 5%;
+  top: 1em;
+}
+
+.testimonial__quote > p {
+  padding-top: 3em;
+  font-size: 0.8em;
+}
+
+.testimonial__autor {
+  display: flex;
+  margin-left: 5%;
+  align-items: center;
+  padding-bottom: 1em;
+}
+
+.testimonial__avatar {
+  width: 2em;
+  border-radius: 50%;
+}
+
+.testimonial__autor-info {
+  margin-left: 0.6em;
+}
+
+.testimonial__autor-name {
+  font-size: 0.6em;
+  font-family: 'Raleway';
+  font-weight: 700;
+  margin-bottom: 0.3em;
+}
+
+.testimnial__autor-title {
+  font-size: 0.5em; 
 }
 
 .apply-now {
@@ -168,7 +281,7 @@ body {
   border: 2px solid darkorange;
 }
 
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 768px) {
   .hero, .what-we-do, .apply-now {
     grid-template-columns: 1fr 1fr; 
   }
