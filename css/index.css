@@ -430,7 +430,7 @@ a, a:visited {
     font-size: 1.7em;
     padding-left: 5%;
     text-align: left;
-    margin-bottom: 0em;
+    margin-bottom: 0.6em;
   }
 
   .what-we-do__texts p {
@@ -451,6 +451,31 @@ a, a:visited {
   .testimonial p {
     width: auto;
   }
+
+  .apply-now__texts {
+    text-align: left;
+  }
+
+  .apply-now__texts h1 {
+    margin-bottom: 0.5em;
+    font-size: 1.2em;
+  }
+
+  .apply-now__texts p {
+    font-size: 0.7em;
+    padding-left: 0em;
+  }
+
+  .apply-now__form .form__input::placeholder {
+    font-size: 0.6em;
+  }
+
+  .apply-now__form .button {
+    width: 40%;
+    height: 3em;
+    font-size: 0.6em;
+  }
+
 }
 
 .attribution { font-size: 11px; text-align: center; }
