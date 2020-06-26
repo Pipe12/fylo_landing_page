@@ -1,29 +1,32 @@
 .navbar 
-  /* border: 2px solid orange; */
+  // border: 2px solid orange
   display: flex
   align-items: center
   justify-content: space-between
   font-size: 0.9em
-
-.navbar__brand img 
-  width: 6.25em
-  margin: 1.5em
+  
+  &__brand 
+    img 
+      width: 6.25em
+      margin: 1.5em
   
 .nav 
   display: flex
-
-.nav__list 
-  list-style: none
-  display: flex
-  margin: 0em
-  padding: 0em
-
-.nav__item
-  margin-right: 1.5em
-
-.nav__link, .nav__link:visited 
-  text-decoration: none
-  color: $dark-blue
-
-.nav__link:hover 
-  color: $light_blue
+  
+  &__list 
+    list-style: none
+    display: flex
+    margin: 0em
+    padding: 0em
+    
+  &__item
+    margin-right: 1.5em
+    
+  &__link
+    text-decoration: none
+    color: $dark-blue 
+    &:visited 
+      text-decoration: none
+      color: $dark-blue
+    &:hover 
+      color: $light_blue

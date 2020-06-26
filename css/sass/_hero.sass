@@ -1,51 +1,50 @@
 .hero 
   // border: 2px solid aquamarine 
-
-.hero__img 
-  //  border: 2px solid red 
-  display: flex
-  align-items: center
-  padding-right: 5%
-  padding-left: 5%
-
-.hero__img img 
-  /* border: 2px solid green */
-  width: 100%
-  margin-top: 2em
-
-.hero__texts 
-  /* border: 2px solid mediumvioletred */
-  display: flex
-  flex-direction: column
-  align-items: center
-  padding: 1em
-
-.hero__texts h1 
-  text-align: center
-  font-size: 1.5em
-  line-height: 1.5em
-
-.hero__texts p
-  text-align: center
-  font-size: 0.9em
-  line-height: 1.5em
+  &__img 
+    //  border: 2px solid red 
+    display: flex
+    align-items: center
+    padding-right: 5%
+    padding-left: 5%
+    
+    img 
+      // border: 2px solid green
+      width: 100%
+      margin-top: 2em
+  
+  &__texts 
+    // border: 2px solid mediumvioletred
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 1em
+    
+    h1 
+      text-align: center
+      font-size: 1.5em
+      line-height: 1.5em
+      
+    p
+      text-align: center
+      font-size: 0.9em
+      line-height: 1.5em
 
 .form 
-  /* border: 2px solid green */
+  // border: 2px solid green
   display: flex
   flex-direction: column
   width: 100%
-
-.form__input 
-  margin-top: 1em
-  height: 2em
-  border: 1px solid $light_blue
-  border-radius: 3px
-
-.form__input::placeholder 
-  color: $gray
-  font-size: 0.8em
-  padding-left: 1em
+  
+  &__input 
+    margin-top: 1em
+    height: 2em
+    border: 1px solid $light_blue
+    border-radius: 3px
+    
+    &::placeholder 
+      color: $gray
+      font-size: 0.8em
+      padding-left: 1em
 
 .button 
   margin-top: 1em
