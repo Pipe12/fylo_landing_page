@@ -41,8 +41,7 @@
       grid-column: 1 / 2
 
       h1   
-        font-size: 1.7em  
-        padding-left: 5%  
+        font-size: 1.7em    
         text-align: left  
         margin-bottom: 0.6em  
         
@@ -50,20 +49,23 @@
         width: 70%  
         font-size: 0.7em  
         
-      .link   
-        padding-left: 5%  
+      .link    
         justify-content: left  
         
   .testimonial   
-    margin-left: 5%  
+    margin-left: 0  
     width: 60%  
     
     p   
       width: auto  
     
   .apply-now
+    flex-direction: row
+    justify-content: space-between
+
     &__texts   
       text-align: left  
+      width: 50%
       
       h1   
         margin-bottom: 0.5em  
@@ -74,6 +76,8 @@
         padding-left: 0em  
         
   .apply-now__form 
+    width: 40%
+    
     .form__input
       &::placeholder   
         font-size: 0.6em  

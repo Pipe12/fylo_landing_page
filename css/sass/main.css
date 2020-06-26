@@ -6,7 +6,9 @@ body {
 
 section {
   padding-top: 3em;
-  padding-bottom: 5em; }
+  padding-bottom: 5em;
+  padding-left: 5%;
+  padding-right: 5%; }
 
 a {
   text-decoration: none;
@@ -15,16 +17,24 @@ a {
     text-decoration: none;
     color: inherit; }
 
-.navbar, h1, button {
-  font-family: "Raleway"; }
-
 .pouch {
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto; }
 
+.navbar, h1, button {
+  font-family: "Raleway"; }
+
+.navbar {
+  padding-left: 5%;
+  padding-right: 5%; }
+
 .hero, .what-we-do, .apply-now {
   display: grid; }
+
+.footer {
+  padding-left: 5%;
+  padding-right: 5%; }
 
 .navbar {
   display: flex;
@@ -33,7 +43,10 @@ a {
   font-size: 0.9em; }
   .navbar__brand img {
     width: 6.25em;
-    margin: 1.5em; }
+    margin-top: 1.5em;
+    margin-right: 0em;
+    margin-bottom: 1.5em;
+    margin-left: 0em; }
 
 .nav {
   display: flex; }
@@ -128,8 +141,6 @@ a {
     margin-bottom: 1.5em; }
   .what-we-do__texts p {
     font-size: 0.8em;
-    padding-left: 5%;
-    padding-right: 5%;
     line-height: 1.5em; }
 
 .link {
@@ -164,7 +175,8 @@ a {
     top: 1em; }
   .testimonial__quote > p {
     padding-top: 3em;
-    font-size: 0.8em; }
+    font-size: 0.8em;
+    padding-left: 5%; }
   .testimonial__autor {
     display: flex;
     margin-left: 5%;
@@ -186,8 +198,9 @@ a {
 .apply-now {
   background-color: #585989;
   color: #f6f6fe;
-  padding-left: 5%;
-  padding-right: 5%; }
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
   .apply-now__texts {
     text-align: center; }
     .apply-now__texts h1 {
@@ -196,12 +209,9 @@ a {
       margin-bottom: 1.5em; }
     .apply-now__texts p {
       font-size: 0.8em;
-      padding-left: 5%;
-      padding-right: 5%;
       line-height: 1.5em; }
   .apply-now__form {
-    padding-left: 15%;
-    padding-right: 15%; }
+    width: 70%; }
   .apply-now .form__input {
     height: 1.5em; }
   .apply-now .button {
@@ -210,12 +220,10 @@ a {
     font-size: 0.7em; }
 
 .footer {
-  /* border: 2px solid darkorange   */
   padding-top: 3em;
   padding-bottom: 3em;
   background-color: #070439;
   color: #f6f6fe;
-  padding-left: 5%;
   font-size: 0.8em; }
   .footer ul {
     list-style: none;
@@ -283,37 +291,41 @@ a {
     grid-column: 1/2; }
     .what-we-do__texts h1 {
       font-size: 1.7em;
-      padding-left: 5%;
       text-align: left;
       margin-bottom: 0.6em; }
     .what-we-do__texts p {
       width: 70%;
       font-size: 0.7em; }
     .what-we-do__texts .link {
-      padding-left: 5%;
       justify-content: left; }
 
   .testimonial {
-    margin-left: 5%;
+    margin-left: 0;
     width: 60%; }
     .testimonial p {
       width: auto; }
 
-  .apply-now__texts {
-    text-align: left; }
-    .apply-now__texts h1 {
-      margin-bottom: 0.5em;
-      font-size: 1.2em; }
-    .apply-now__texts p {
-      font-size: 0.7em;
-      padding-left: 0em; }
+  .apply-now {
+    flex-direction: row;
+    justify-content: space-between; }
+    .apply-now__texts {
+      text-align: left;
+      width: 50%; }
+      .apply-now__texts h1 {
+        margin-bottom: 0.5em;
+        font-size: 1.2em; }
+      .apply-now__texts p {
+        font-size: 0.7em;
+        padding-left: 0em; }
 
-  .apply-now__form .form__input::placeholder {
-    font-size: 0.6em; }
-  .apply-now__form .button {
-    width: 40%;
-    height: 3em;
-    font-size: 0.6em; }
+  .apply-now__form {
+    width: 40%; }
+    .apply-now__form .form__input::placeholder {
+      font-size: 0.6em; }
+    .apply-now__form .button {
+      width: 40%;
+      height: 3em;
+      font-size: 0.6em; }
 
   .footer {
     font-size: 0.7em; }
